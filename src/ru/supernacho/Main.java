@@ -28,13 +28,19 @@ public class Main {
 
         Box<Orange> orangeBox = new Box<>();
         Box<Orange> orangeBox2 = new Box<>();
+        Box<Orange> orangeBox3 = new Box<>();
         Box<Apple> appleBox = new Box<>();
         Box<Apple> appleBox2 = new Box<>();
+        Box<Apple> appleBox3 = new Box<>();
 
 
         orangeBox.add(new Orange());
         orangeBox.add(new Orange());
         orangeBox.add(new Orange());
+        orangeBox3.add(new Orange());
+        orangeBox3.add(new Orange());
+        orangeBox3.add(new Orange());
+        orangeBox3.add(new Orange());
 
         appleBox.add(new Apple());
         appleBox.add(new Apple());
@@ -42,15 +48,25 @@ public class Main {
         appleBox.add(new Apple());
         appleBox.add(new Apple());
         appleBox.add(new Apple());
+        appleBox3.add(new Apple());
+        appleBox3.add(new Apple());
+        appleBox3.add(new Apple());
+        appleBox3.add(new Apple());
+        appleBox3.add(new Apple());
+        appleBox3.add(new Apple());
 
         System.out.println("Коробка#1 с Апельсинами весит: " + orangeBox.getWeight() + " " + orangeBox.toString());
         System.out.println("Коробка#2 с Апельсинами весит: " + orangeBox2.getWeight() + " " + orangeBox2.toString());
+        System.out.println("Коробка#3 с Апельсинами весит: " + orangeBox3.getWeight() + " " + orangeBox3.toString());
         System.out.println("\nКоробка#1 с Яблоками весит: " + appleBox.getWeight() + " " + appleBox.toString());
         System.out.println("Коробка#2 с Яблоками весит: " + appleBox2.getWeight() + " " + appleBox2.toString());
+        System.out.println("Коробка#3 с Яблоками весит: " + appleBox3.getWeight() + " " + appleBox3.toString());
 
         System.out.println("\nСравниваем коробку№1 с яблоками с коробкой №1 с апельсинами\n" +
                 "Яблок: " + appleBox.getCount() + " Апельсинов: " + orangeBox.getCount() + "\nОдинаково весят? "
                 + appleBox.compare(orangeBox));
+        System.out.println("Сравниваем коробки№ 3, яблоки и апельсины. \nЯблок: " + appleBox3.getCount() +
+                " Апельсинов: " + orangeBox3.getCount() + "\nОдинаково весят? " + appleBox3.compare(orangeBox3));
 
         appleBox.moveToBox(appleBox2);
         orangeBox.moveToBox(orangeBox2);
